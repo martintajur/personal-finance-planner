@@ -1,0 +1,16 @@
+{
+  "name": "financial-planner-personal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "martin <martin@pipedrive.com> (http://www.pipedrive.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.4.0",
+    "google-spreadsheet": "^1.0.1",
+    "numeral": "^1.5.3"
+  }
+}
