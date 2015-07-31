@@ -91,7 +91,6 @@ async.waterfall([
 				farthestDate = transaction.date;
 			}
 		});
-		console.log(farthestDate);
 		callback(null);
 	},
 	function extendMonthlyRecurringTransactions(callback) {
