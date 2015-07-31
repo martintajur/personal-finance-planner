@@ -126,6 +126,9 @@ async.waterfall([
 		var balancePointer = startingBalance,
 			daysToFarthestDate = Math.ceil((moment(farthestDate).add(1, 'day').toDate().getTime() - moment(earliestDate).subtract(1, 'day').toDate().getTime()) / 1000 / 86400);
 
+		console.log('===================================================================');
+		console.log('Date\tBalance\tReason\tSum');
+
 		_.each(_.range(0, daysToFarthestDate), function(d) {
 			var now = moment(earliestDate.toISOString()).add(d, 'days').startOf('day');
 			var transactionsOnDay = _.where(transactions, { date: now.toDate() });
@@ -133,9 +136,8 @@ async.waterfall([
 			_.each(transactionsOnDay, function(transaction) {
 				balancePointer = balancePointer + transaction.sum;
 
-				console.log(colors[(balancePointer < minimumCashReserve ? 'red' : 'green')](now.format('YYYY-MM-DD') + '	' + balancePointer + '	' + transaction.reason + '	' + transaction.sum));
+				console.log(colors[(balancePointer < minimumCashReserve ? 'red' : 'green')](now.format('YYYY-MM-DD') + '\t' + balancePointer + '\t' + transaction.reason + '\t' + transaction.sum));
 			});
-
 		});
 
 		callback(null);
