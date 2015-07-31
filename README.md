@@ -31,7 +31,8 @@ In Google Developer Console, under "APIs and auth › Credentials", create new C
 Create a `config.json` file in the repository folder with the following contents. Be sure to replace the long hash with the hash of your copy of the financial planning spreadsheet — you can grab the correct hash from the URL while editing the sheet):
 ```json
 {
-	"spreadsheetId": "19MK19rjmadjnqqqlmmcnv039qk324343lmvvvxpzzs2"
+	"spreadsheetId": "19MK19rjmadjnqqqlmmcnv039qk324343lmvvvxpzzs2",
+	"minimumCashReserve": 10000
 }
 ```
 
