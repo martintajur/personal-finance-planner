@@ -133,7 +133,7 @@ async.waterfall([
 			_.each(transactionsOnDay, function(transaction) {
 				balancePointer = balancePointer + transaction.sum;
 
-				console.log(colors[(balancePointer < minimumCashReserve ? 'red' : 'green')](now.format('YYYY-MM-DD') + '	' + transaction.sum + '	' + balancePointer + '	' + transaction.reason + ''));
+				console.log(colors[(balancePointer < minimumCashReserve ? 'red' : 'green')](now.format('YYYY-MM-DD') + '	' + balancePointer + '	' + transaction.reason + '	' + transaction.sum));
 			});
 
 		});
@@ -144,9 +144,7 @@ async.waterfall([
 	if (err) {
 		throw err;
 	}
-	//console.log('transactions', JSON.stringify(transactions, null, 2));
 });
-
 
 function recurrTransaction(transaction, monthsToRecurr) {
 	_.each(_.range(1, monthsToRecurr), function(i) {
