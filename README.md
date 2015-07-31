@@ -50,3 +50,7 @@ Execute `npm install` in the repository folder.
 ### 9. You're all set!
 
 The script will execute using the `npm start` command.
+
+## Licence
+
+MIT.
