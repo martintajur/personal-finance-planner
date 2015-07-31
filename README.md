@@ -35,7 +35,7 @@ Create a `config.json` file in the repository folder with the following contents
 ```json
 {
 	"spreadsheetId": "19MK19rjmadjnqqqlmmcnv039qk324343lmvvvxpzzs2",
-	"minimumCashReserve": 10000
+	"minimumCashReserve": 1000
 }
 ```
 
