@@ -2,6 +2,7 @@
 
 By using a [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1h3oX9NNmmeBPXflMe4DWCF5pNWQ7ptew3PbxfMUF1aI/edit), you can list your recurring or one-time expenses and incomes, and get a detailed forecast of your projected cash balance after every transaction.
 
+![screenshot](https://raw.githubusercontent.com/martintajur/personal-finance-planner/master/screenshot-sheets.png "Screenshot")
 ![screenshot](https://raw.githubusercontent.com/martintajur/personal-finance-planner/master/screenshot.png "Screenshot")
 
 ## Set up
